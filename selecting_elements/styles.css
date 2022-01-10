@@ -1,0 +1,38 @@
+body {
+    color: blue;
+    background-color: beige;
+}
+
+/* elements with a class of favorite */
+/*.favorite {
+    color: green;
+}*/
+
+/* element with an id of title */
+#title {
+    font-size: 3em;
+}
+
+/* li elements inside of a ul */
+ul li {
+    font-weight: bold;
+}
+
+ol, ul {
+    border: 2px solid black;
+}
+
+ol {
+    background-color: lightblue;
+}
+
+/* how would I select the basketball list item? */
+#hobbies-list li:first-child {
+    color: orange;
+}
+
+
+
+
+
+
