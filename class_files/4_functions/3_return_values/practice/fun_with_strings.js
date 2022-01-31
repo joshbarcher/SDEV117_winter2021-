@@ -1,3 +1,10 @@
+//create a variable with your full name in it
+
+//change your name with the functions below
+
+//print out the newly formatted name
+
+
 function capitalize(theString) {
     let updated = theString.toUpperCase();
     return updated;
