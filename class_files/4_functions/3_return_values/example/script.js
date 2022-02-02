@@ -15,3 +15,22 @@ function isEven(number)
     }
     return false;
 }
+
+let even = isEven(10);
+let odd = isEven(9);
+
+console.log(even);
+console.log(odd);
+
+if (odd)
+{
+    console.log("Your number is odd")
+}
+
+
+
+
+
+
+
+

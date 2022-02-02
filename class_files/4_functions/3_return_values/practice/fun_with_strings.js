@@ -1,11 +1,19 @@
 //create a variable with your full name in it
+let name = "Josh B. Archer";
 
 //change your name with the functions below
+name = capitalize(name);
+name = replace(name);
+name = prepend(name, "Mr. ");
 
 //print out the newly formatted name
+console.log(name);
 
+let adam = "Adam Wise";
+console.log(capitalize(replace(adam)))
 
-function capitalize(theString) {
+function capitalize(theString)
+{
     let updated = theString.toUpperCase();
     return updated;
 }
@@ -16,7 +24,8 @@ function append(theString, newContent)
     return updated;
 }
 
-function prepend(theString, newContent) {
+function prepend(theString, newContent)
+{
     let updated = newContent + theString;
     return updated;
 }
