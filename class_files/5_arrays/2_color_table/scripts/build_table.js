@@ -26,5 +26,28 @@ let colorNames = [
     "SeaShell", "Sienna", "Silver", "SkyBlue", "SlateBlue", "SlateGray",
     "SlateGrey", "Snow", "SpringGreen", "SteelBlue", "Tan", "Teal", "Thistle",
     "Tomato", "Turquoise", "Violet", "Wheat", "White", "WhiteSmoke", "Yellow",
-    "YellowGreen",
+    "YellowGreen"
 ];
+
+let tbody = document.querySelector("#color-table tbody");
+for (let i = 0; i < colorNames.length; i++)
+{
+    let color = colorNames[i];
+    let row = "<tr><td>" + color +
+              "</td><td style='background-color: " + color + "'>Color</td></tr>";
+    tbody.innerHTML += row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

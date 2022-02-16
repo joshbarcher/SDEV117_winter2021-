@@ -18,3 +18,4 @@ let plane = {
                          (point1.y - point2.y) ** 2);
     }
 }
+
