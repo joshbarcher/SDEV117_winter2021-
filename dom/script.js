@@ -1,4 +1,4 @@
-//we can select form element values using the "value" property
+/*//we can select form element values using the "value" property
 let textbox = document.querySelector("input");
 let textboxValue = textbox.value;
 console.log(textboxValue);
@@ -21,12 +21,15 @@ textbox.setAttribute("readonly", "true");
 let link = document.querySelector("a");
 link.setAttribute("href", "https://en.wikipedia.org/wiki/Main_Page")
 
-console.log(link.getAttribute("href"));
+console.log(link.getAttribute("href"));*/
 
+//target an element, then add a CSS class to the element
+let firstParagraph = document.querySelector("p:first-child");
+firstParagraph.className = "highlight";
 
-
-
-
+let secondParagraph = document.querySelector("p:nth-child(2)");
+secondParagraph.classList.add("highlight");
+secondParagraph.classList.add("bold");
 
 
 

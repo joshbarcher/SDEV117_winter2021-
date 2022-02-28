@@ -1,0 +1,17 @@
+/* target the form with the class interest */
+.interest-form {
+
+}
+
+.interesting {
+    color: darkblue;
+}
+
+.highlight {
+    text-decoration: red underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
