@@ -11,7 +11,7 @@ section label {
 aside {
     color: red;
     padding: 2px;
-    display: none;
+    display: none; /* hide these initially */
 }
 
 input, select {
