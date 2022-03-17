@@ -13,20 +13,18 @@ function validateForm(event)
     let age = document.querySelector("#age").value;
     age = parseFloat(age);
 
-    //make sure the name is 3-10 characters
-    let error = document.querySelector("#name-error");
-    if (name.length >= 3 && name.length <= 10)
-    {
-        error.style.display = "none";
-    }
-    else
-    {
-        error.style.display = "inline-block";
-    }
+    let nameLength = () => name.length >= 3 && name.length <= 10;
+    let ageRange = () => age >= 1 && age <= 100;
 
-    //make sure the age is 1-100
-    error = document.querySelector("#age-error");
-    if (age >= 1 && age <= 100)
+    //make sure the name is 3-10 characters
+    validate("#name-error", nameLength);
+    validate("#age-error", ageRange);
+}
+
+function validate(errorFieldName, condition)
+{
+    let error = document.querySelector(errorFieldName);
+    if (condition())
     {
         error.style.display = "none";
     }
@@ -35,4 +33,3 @@ function validateForm(event)
         error.style.display = "inline-block";
     }
 }
-
